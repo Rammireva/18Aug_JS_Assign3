@@ -1,0 +1,19 @@
+<html>
+<head><title>Jquery</title></head>
+<body>
+<ul>
+    <li>India</li>
+    <li>America</li>
+    <li>Switzerland</li>
+</ul>
+<button id="clk">Click</button>
+</body>
+<script src="../../jquery.min.js"></script>
+<script type="application/javascript">
+    $('#clk').click(function(e){
+        $( "li" ).each(function( index ) {
+            $(this).prepend(index + ": ");
+        });
+    })
+</script>
+</html>
